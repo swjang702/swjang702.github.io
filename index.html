@@ -33,28 +33,66 @@
     </nav>
 
     <div class="container mt-5">
-      <div id="about" class="row align-items-center">
-        <div class="col-md-4 text-center">
-          <img src="https://via.placeholder.com/250" class="img-fluid rounded-circle" alt="Profile Picture">
-        </div>
-        <div class="col-md-8">
-          <h1 class="display-4">Sunwoo Jang</h1>
-          <p class="lead">Researcher & Software Engineer</p>
-          <hr class="my-4">
-          <p>
-            [A brief, engaging paragraph about your professional background and interests goes here. You can mention your passion for technology, your key areas of expertise, and what drives you as a researcher and engineer.]
+      <div id="about" class="row">
+        <!-- Profile Header -->
+        <div class="col-12 text-center mb-5">
+          <img src="portrait.jpeg" class="rounded-circle mb-3" alt="Sunwoo Jang Profile Picture" style="width: 150px; height: 150px; object-fit: cover;">
+          <h1 class="display-4 mb-2">Sunwoo Jang</h1>
+          <p class="lead text-muted mb-3">Software Engineer & Researcher</p>
+          <p class="mx-auto" style="max-width: 600px;">
+            Software Engineer and Researcher with integrity and ambition who wants to contribute to the world for the better. Currently working as an Embedded Software Engineer at LG Innotek, with experiences in system-level programming, security research, and containerization technologies.
+            I do reading articles and books, working out, searching technical stuff, drinking beer&wine, and thinking in my spare time.
           </p>
-          <h5>Interests & Skills</h5>
-          <ul>
-            <li>eBPF & Kernel Development</li>
-            <li>Container Runtimes & Orchestration</li>
-            <li>Systems Programming with Rust</li>
-            <li>Cloud Native Technologies</li>
-          </ul>
-          <div>
-            <a href="#" class="btn btn-outline-dark me-2">GitHub</a>
-            <a href="#" class="btn btn-outline-dark me-2">LinkedIn</a>
-            <a href="mailto:your-email@example.com" class="btn btn-outline-dark">Email</a>
+          <div class="mb-4">
+            <a href="#" class="btn btn-outline-primary me-2">GitHub</a>
+            <a href="#" class="btn btn-outline-primary me-2">LinkedIn</a>
+            <a href="mailto:swjang702@gmail.com" class="btn btn-outline-primary">Email</a>
+          </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Experience</h5>
+              <div class="mb-3">
+                <h6 class="mb-1">Embedded Software Engineer</h6>
+                <small class="text-muted">LG Innotek • Aug 2024 - Present</small>
+                <p class="small mt-1">Building BSP for connectivity modems and solving complex system problems</p>
+              </div>
+              <div class="mb-3">
+                <h6 class="mb-1">Software Engineer</h6>
+                <small class="text-muted">Genians • Sep 2023 - Aug 2024</small>
+                <p class="small mt-1">Developed Linux EDR agent with eBPF and tracefs for security monitoring</p>
+              </div>
+              <div class="mb-3">
+                <h6 class="mb-1">Cloud Support Associate</h6>
+                <small class="text-muted">Amazon Web Services Korea • Jun 2022 - Aug 2023</small>
+                <p class="small mt-1">Troubleshooted Kubernetes and containerization services for customers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education & Skills Section -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Education</h5>
+              <div class="mb-4">
+                <h6 class="mb-1">M.S. Computer Science and Engineering</h6>
+                <small class="text-muted">Kyungpook National University • 2020-2022</small>
+                <p class="small mt-1">Thesis: System call translation mapping extraction in secure container runtimes</p>
+              </div>
+              
+              <h5 class="card-title">Technical Skills</h5>
+              <div class="row g-2">
+                <div class="col-12"><span class="badge bg-secondary">C/C++</span> <span class="badge bg-secondary">Rust</span> <span class="badge bg-secondary">Shell scripting</span></div>
+                <div class="col-12"><span class="badge bg-info">BPF</span> <span class="badge bg-info">ftrace</span> <span class="badge bg-info">perf</span> <span class="badge bg-info">strace</span></div>
+                <div class="col-12"><span class="badge bg-success">Docker</span> <span class="badge bg-success">Kubernetes</span> <span class="badge bg-success">gVisor</span></div>
+                <div class="col-12"><span class="badge bg-warning">Linux Kernel</span> <span class="badge bg-warning">System Security</span></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
