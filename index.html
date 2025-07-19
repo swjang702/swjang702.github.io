@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>swjang702's Portfolio</title>
+    <title>Sunwoo Jang</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
@@ -19,7 +19,7 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="articles.html">Articles</a>
+              <a class="nav-link" href="#publications">Publications</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
@@ -41,7 +41,7 @@
           <p class="lead text-muted mb-3">Software Engineer & Researcher</p>
           <p class="mx-auto" style="max-width: 600px;">
             Software Engineer and Researcher with integrity and ambition who wants to contribute to the world for the better. Currently working as an Embedded Software Engineer at LG Innotek, with experiences in system-level programming, security research, and containerization technologies.
-            I do reading articles and books, working out, searching technical stuff, drinking beer&wine, and thinking in my spare time.
+            In my spare time, I read articles and books, work out, research technical things, drink beer and wine, and think.
           </p>
           <div class="mb-4">
             <a href="https://github.com/swjang702" class="btn btn-outline-primary me-2" target="_blank">GitHub</a>
@@ -97,21 +97,63 @@
         </div>
       </div>
 
-      <div id="articles" class="row mt-5">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="display-4">Recent Articles</h2>
+      <div id="publications" class="row mt-5">
+        <div class="col-lg-10 mx-auto">
+          <h2 class="display-4">Publications</h2>
           <hr class="my-4">
-          <div class="list-group">
-            <a href="/articles/exploring-ebpf.html" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Exploring eBPF</h5>
-                <small>July 3, 2025</small>
+          
+          <!-- Conference Papers -->
+          <div class="mb-4">
+            <h4 class="text-primary mb-3">Conference Papers</h4>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title mb-2">SecQuant: Quantifying Container System Call Exposure</h5>
+                <p class="card-text mb-2">
+                  <strong>Sunwoo Jang</strong>, Somin Song, Byungchul Tak, Sahil Suneja, Michael V. Le, Chuan Yue, Dan Williams
+                </p>
+                <p class="card-text mb-2">
+                  <em>Proceedings of the 27th European Symposium on Research in Computer Security (ESORICS'22)</em><br>
+                  <small class="text-muted">Copenhagen, Denmark, September 2022</small>
+                </p>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-primary">Container Security</span>
+                  <span class="badge bg-secondary">System Calls</span>
+                  <span class="badge bg-info">Quantitative Analysis</span>
+                </div>
               </div>
-              <p class="mb-1">A deep dive into the world of eBPF and its capabilities.</p>
-            </a>
+            </div>
           </div>
-          <div class="text-center mt-4">
-            <a href="articles.html" class="btn btn-outline-primary">View All Articles</a>
+
+          <!-- Journal Articles -->
+          <div class="mb-4">
+            <h4 class="text-primary mb-3">Journal Articles</h4>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title mb-2">Understanding File System Operations of a Secure Container Runtime Using System Call Tracing Technique</h5>
+                <p class="card-text mb-2">
+                  <strong>Sunwoo Jang</strong>, Young-Kyoon Suh, Byungchul Tak
+                </p>
+                <p class="card-text mb-2">
+                  <em>IEICE Transactions on Information and Systems</em><br>
+                  <small class="text-muted">Vol.E107, No.2, February 2024</small>
+                </p>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-primary">Container Runtime</span>
+                  <span class="badge bg-secondary">File Systems</span>
+                  <span class="badge bg-info">System Call Tracing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Interests -->
+          <div class="card bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Research Interests</h5>
+              <p class="card-text">
+                System Security, Container Technologies, Operating Systems, eBPF, Security Monitoring
+              </p>
+            </div>
           </div>
         </div>
       </div>
