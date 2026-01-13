@@ -1,154 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sunwoo Jang</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#publications">Publications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunwoo Jang - Systems Security Researcher</title>
+    <!-- Tailwind CSS (CDN으로 바로 로드됨, 설치 불필요) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts: Inter (본문), Merriweather (이름/제목) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #333; }
+        h1, h2, h3 { font-family: 'Merriweather', serif; }
+        /* 링크 호버 효과 */
+        a { transition: color 0.2s; }
+        a:hover { color: #2563EB; }
+        /* 모바일 최적화 */
+        @media (max-width: 768px) {
+            .sidebar { position: static; width: 100%; height: auto; padding-bottom: 2rem; }
+            .content { margin-left: 0; }
+        }
+    </style>
+</head>
+<body class="bg-white">
 
-    <div class="container mt-5">
-      <div id="about" class="row">
-        <!-- Profile Header -->
-        <div class="col-12 text-center mb-5">
-          <img src="portrait.jpeg" class="mb-3" alt="Sunwoo Jang Profile Picture" style="width: 150px; height: 200px; object-fit: cover; border-radius: 8px;">
-          <h1 class="display-4 mb-2">Sunwoo Jang</h1>
-          <p class="lead text-muted mb-2">Software Engineer & Researcher</p>
-          <p class="mb-4" style="color: #5d6d7e;">swjang702@gmail.com</p>
-          <p class="mx-auto" style="max-width: 600px;">
-            I have some experiences in system-level programming, security research, and containerization technologies.
-            My past research focused on security measurements for secure container runtimes, requiring in-depth knowledge of secure containers, system call tracing, the Linux kernel's security features, and kernel exploits.
-            In my spare time, I enjoy exploring emerging technologies, reading books and articles, working out, drinking beer and wine, and thinking.
-          </p>
-          <div class="mb-4">
-            <a href="https://github.com/swjang702" class="btn btn-outline-primary me-2" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/sunwoo-jang-4731a4179/" class="btn btn-outline-primary me-2" target="_blank">LinkedIn</a>
-          </div>
-        </div>
-
-        <!-- Experience Section -->
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Experience</h5>
-              <div class="mb-3">
-                <h6 class="mb-1">Embedded Software Engineer</h6>
-                <small class="text-muted">LG Innotek • Aug 2024 - Aug 2025</small>
-                <p class="small mt-1">Building BSP for automotive connectivity modems and solving system-level issues</p>
-              </div>
-              <div class="mb-3">
-                <h6 class="mb-1">Software Engineer</h6>
-                <small class="text-muted">Genians • Sep 2023 - Aug 2024</small>
-                <p class="small mt-1">Developed Linux EDR agent with eBPF and tracefs for security monitoring</p>
-              </div>
-              <div class="mb-3">
-                <h6 class="mb-1">Cloud Support Associate</h6>
-                <small class="text-muted">Amazon Web Services Korea • Jun 2022 - Aug 2023</small>
-                <p class="small mt-1">Troubleshooted Kubernetes and containerization services for customers</p>
-              </div>
+    <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row">
+        
+        <!-- [LEFT SIDEBAR] Arvind 교수님 스타일: 고정 사이드바 -->
+        <aside class="sidebar w-full md:w-1/4 md:h-screen md:fixed top-0 left-0 p-8 flex flex-col justify-start md:border-r border-gray-100 bg-white z-10">
+            <!-- 프로필 사진 (본인 사진 경로로 변경하세요) -->
+            <div class="mb-6">
+                <!-- 예시 이미지는 placeholder입니다. 본인 사진 파일명으로 src를 바꾸세요. -->
+                <img src="portrait.jpeg" 
+                     onerror="this.src='https://ui-avatars.com/api/?name=Sunwoo+Jang&background=0D8ABC&color=fff&size=256'"
+                     alt="Sunwoo Jang" 
+                     class="w-32 h-32 rounded-lg object-cover shadow-sm grayscale hover:grayscale-0 transition duration-500">
             </div>
-          </div>
-        </div>
 
-        <!-- Education & Skills Section -->
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Education</h5>
-              <div class="mb-4">
-                <h6 class="mb-1">M.S. Computer Science and Engineering</h6>
-                <small class="text-muted">Kyungpook National University • 2020-2022</small>
-                <p class="small mt-1">Thesis: System call translation mapping extraction in secure container runtimes</p>
-              </div>
-              
-              <h5 class="card-title">Technical Skills</h5>
-              <div class="row g-2">
-                <div class="col-12"><span class="badge bg-secondary">C/C++</span> <span class="badge bg-secondary">Rust</span> <span class="badge bg-secondary">Shell scripting</span></div>
-                <div class="col-12"><span class="badge bg-info">BPF</span> <span class="badge bg-info">ftrace</span> <span class="badge bg-info">perf</span> <span class="badge bg-info">strace</span></div>
-                <div class="col-12"><span class="badge bg-success">Docker</span> <span class="badge bg-success">Kubernetes</span> <span class="badge bg-success">gVisor</span></div>
-                <div class="col-12"><span class="badge bg-warning">Linux Kernel</span> <span class="badge bg-warning">System Security</span></div>
-              </div>
+            <h1 class="text-2xl font-bold text-gray-900 mb-1">Sunwoo Jang</h1>
+            <p class="text-sm text-gray-600 mb-6 font-medium">Security Researcher</p>
+
+            <!-- 연락처 및 링크 -->
+            <div class="space-y-2 text-sm text-gray-700">
+                <p>Incoming PhD Student @ [Univ]</p> <!-- 학교 정해지면 수정 -->
+                <a href="mailto:swjang702@gmail.com" class="block hover:text-blue-600">swjang702@gmail.com</a>
+                
+                <div class="flex gap-3 mt-4">
+                    <!-- CV Link -->
+                    <a href="#" class="text-gray-500 hover:text-blue-700 flex items-center gap-1">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        CV
+                    </a>
+                    <!-- Google Scholar -->
+                    <a href="#" class="text-gray-500 hover:text-blue-700 flex items-center gap-1">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+                        Scholar
+                    </a>
+                    <!-- GitHub -->
+                    <a href="https://github.com/swjang702" class="text-gray-500 hover:text-blue-700 flex items-center gap-1">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
+        </aside>
 
-      <div id="publications" class="row mt-5">
-        <div class="col-lg-10 mx-auto">
-          <h2 class="mb-4" style="font-weight: 300; color: #2c3e50;">Publications</h2>
-          <hr class="mb-5" style="border-color: #bdc3c7;">
-          
-          <!-- Conference Papers -->
-          <div class="mb-5">
-            <h4 class="mb-4" style="font-weight: 400; color: #34495e; border-bottom: 1px solid #ecf0f1; padding-bottom: 8px;">Conference Papers</h4>
-            <div class="mb-4" style="border-left: 3px solid #ecf0f1; padding-left: 20px;">
-              <h5 class="mb-2" style="font-weight: 500; color: #2c3e50;">
-                SecQuant: Quantifying Container System Call Exposure 
-                <a href="https://www.cs.toronto.edu/~sahil/suneja-esorics22.pdf" class="text-decoration-none" style="color: #3498db; font-size: 0.9em;">[PDF]</a>
-              </h5>
-              <p class="mb-2" style="color: #5d6d7e;">
-                <strong>Sunwoo Jang</strong>, Somin Song, Byungchul Tak, Sahil Suneja, Michael V. Le, Chuan Yue, Dan Williams
-              </p>
-              <p class="mb-3" style="color: #7f8c8d;">
-                <em>Proceedings of the 27th European Symposium on Research in Computer Security (ESORICS'22)</em><br>
-                Copenhagen, Denmark, September 2022
-              </p>
-            </div>
-          </div>
+        <!-- [RIGHT CONTENT] 메인 콘텐츠 영역 -->
+        <main class="content w-full md:w-3/4 md:ml-[25%] p-8 md:p-16 min-h-screen">
+            
+            <!-- 1. Bio Section -->
+            <section class="mb-16 max-w-2xl">
+                <p class="text-base leading-7 text-gray-800 mb-4">
+                    I am a Security Researcher interested in <b>Systems Security</b>, specifically focused on 
+                    <span class="bg-gray-100 px-1 rounded text-gray-900">operating system security</span> and 
+                    <span class="bg-gray-100 px-1 rounded text-gray-900">container runtime protection</span>.
+                </p>
+                <p class="text-base leading-7 text-gray-800">
+                    Currently, I am looking for PhD opportunities. My research goal is to build robust and verifiable security systems by bridging the gap between high-level abstractions and low-level system behaviors. 
+                    Previously, I worked as an Embedded Software Engineer at LG Innotek.
+                </p>
+            </section>
 
-          <!-- Journal Articles -->
-          <div class="mb-5">
-            <h4 class="mb-4" style="font-weight: 400; color: #34495e; border-bottom: 1px solid #ecf0f1; padding-bottom: 8px;">Journal Articles</h4>
-            <div class="mb-4" style="border-left: 3px solid #ecf0f1; padding-left: 20px;">
-              <h5 class="mb-2" style="font-weight: 500; color: #2c3e50;">
-                Understanding File System Operations of a Secure Container Runtime Using System Call Tracing Technique 
-                <a href="https://www.jstage.jst.go.jp/article/transinf/E107.D/2/E107.D_2023EDL8039/_pdf" class="text-decoration-none" style="color: #3498db; font-size: 0.9em;">[PDF]</a>
-              </h5>
-              <p class="mb-2" style="color: #5d6d7e;">
-                <strong>Sunwoo Jang</strong>, Young-Kyoon Suh, Byungchul Tak
-              </p>
-              <p class="mb-3" style="color: #7f8c8d;">
-                <em>IEICE Transactions on Information and Systems</em><br>
-                Vol.E107, No.2, February 2024
-              </p>
-            </div>
-          </div>
+            <!-- 2. Publications Section (Yinfang Chen Style) -->
+            <!-- Systems Security 느낌: Venue를 강조하고, 버튼을 Minimal하게 -->
+            <section class="mb-16">
+                <h2 class="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-8">Publications</h2>
+                
+                <div class="space-y-8">
+                    
+                    <!-- Paper 1 -->
+                    <div class="flex flex-col md:flex-row gap-2 md:gap-6">
+                        <!-- Venue (Left) -->
+                        <div class="w-full md:w-32 flex-shrink-0">
+                            <span class="text-blue-700 font-bold text-sm tracking-wide">ESORICS '22</span>
+                        </div>
+                        <!-- Details (Right) -->
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold text-gray-900 leading-snug mb-1">
+                                SecQuant: Quantifying Container System Call Exposure
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-2">
+                                <span class="font-bold text-gray-900 border-b-2 border-blue-100">Sunwoo Jang</span>, Somin Song, Byungchul Tak, Sahil Suneja, Michael V. Le, Chuan Yue, Dan Williams
+                            </p>
+                            <!-- Buttons (Artifacts) -->
+                            <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                                <a href="#" class="border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-800 hover:text-white transition">PDF</a>
+                                <a href="#" class="border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-800 hover:text-white transition">CODE</a>
+                                <a href="#" class="border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-800 hover:text-white transition">SLIDES</a>
+                            </div>
+                        </div>
+                    </div>
 
-          <!-- Research Interests -->
-          <div class="mt-5 pt-4" style="border-top: 1px solid #ecf0f1;">
-            <h4 class="mb-3" style="font-weight: 400; color: #34495e;">Research Interests</h4>
-            <p style="color: #5d6d7e; line-height: 1.6;">
-              <!-- System Security, Operating Systems, Container Technologies, Security Monitoring -->
-              OS, System security, Formal modeling and verification of abstraction layer security properties, security measurement.
-            </p>
-          </div>
-        </div>
-      </div>
+                    <!-- Paper 2 -->
+                    <div class="flex flex-col md:flex-row gap-2 md:gap-6">
+                        <!-- Venue (Left) -->
+                        <div class="w-full md:w-32 flex-shrink-0">
+                            <span class="text-blue-700 font-bold text-sm tracking-wide">IEICE Trans '24</span>
+                        </div>
+                        <!-- Details (Right) -->
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold text-gray-900 leading-snug mb-1">
+                                Understanding File System Operations of a Secure Container Runtime
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-2">
+                                <span class="font-bold text-gray-900 border-b-2 border-blue-100">Sunwoo Jang</span>, Young-Kyoon Suh, Byungchul Tak
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                                <a href="#" class="border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-800 hover:text-white transition">PDF</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 3. Education & Experience (Minimal List) -->
+            <section class="mb-16">
+                <h2 class="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-6">Experience</h2>
+                <ul class="space-y-4 text-sm">
+                    <li class="grid grid-cols-[1fr_auto] gap-4">
+                        <div>
+                            <span class="font-bold text-gray-900 block">Embedded Software Engineer</span>
+                            <span class="text-gray-600">LG Innotek</span>
+                        </div>
+                        <span class="text-gray-500 text-right">Aug 2024 – Present</span>
+                    </li>
+                    <li class="grid grid-cols-[1fr_auto] gap-4">
+                        <div>
+                            <span class="font-bold text-gray-900 block">Software Engineer</span>
+                            <span class="text-gray-600">Genians</span>
+                        </div>
+                        <span class="text-gray-500 text-right">Sep 2023 – Aug 2024</span>
+                    </li>
+                     <li class="grid grid-cols-[1fr_auto] gap-4">
+                        <div>
+                            <span class="font-bold text-gray-900 block">M.S. in Computer Science and Engineering</span>
+                            <span class="text-gray-600">Kyungpook National University</span>
+                        </div>
+                        <span class="text-gray-500 text-right">2020 – 2022</span>
+                    </li>
+                </ul>
+            </section>
+
+             <!-- Footer -->
+             <footer class="text-xs text-gray-400 mt-20 pt-8 border-t border-gray-100">
+                <p>&copy; 2025 Sunwoo Jang. Last updated: Jan 2025.</p>
+            </footer>
+
+        </main>
     </div>
 
-    <div class="mb-5"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
 </html>
