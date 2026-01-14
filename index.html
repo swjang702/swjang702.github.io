@@ -23,25 +23,19 @@
 </head>
 <body class="bg-white text-gray-900">
 
-    <!-- 
-      [Layout Change] 
-      max-w-5xl: 전체 너비를 너무 넓지 않게 제한 (가독성 향상)
-      mx-auto: 화면 정중앙에 위치시킴 (왼쪽 쏠림 해결)
-    -->
+    <!-- 메인 컨테이너: 화면 중앙 정렬 -->
     <div class="max-w-6xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row gap-12 md:gap-20">
         
-        <!-- [LEFT SIDEBAR] Sticky Position 사용 
-             화면 끝에 붙는 Fixed 대신, 부모 컨테이너 내에서 따라오는 Sticky 사용 
-        -->
+        <!-- [LEFT SIDEBAR] -->
         <aside class="sidebar w-full md:w-64 flex-shrink-0 md:sticky md:top-20 md:h-fit">
             
-            <!-- 프로필 사진 -->
+            <!-- 프로필 사진 (컬러 원본 유지) -->
             <div class="mb-8">
+                <!-- grayscale 클래스 제거함 -->
                 <img src="portrait.jpeg" 
                      onerror="this.src='https://ui-avatars.com/api/?name=Sunwoo+Jang&background=333&color=fff&size=256'"
                      alt="Sunwoo Jang" 
                      class="w-40 h-40 rounded-lg object-cover shadow-sm">
-                     <!-- class="w-40 h-40 rounded-lg object-cover grayscale hover:grayscale-0 transition duration-500 shadow-sm"> -->
             </div>
 
             <h1 class="text-2xl font-bold text-gray-900 mb-1">Sunwoo Jang</h1>
@@ -51,12 +45,10 @@
             <div class="space-y-3 text-sm text-gray-600">
                 <p>Incoming PhD Student<br>@ [University Name]</p>
                 
-                <!-- 이메일 -->
                 <a href="mailto:swjang702@gmail.com" class="block hover:text-blue-700 hover:underline decoration-1 underline-offset-2">
                     swjang702@gmail.com
                 </a>
                 
-                <!-- 아이콘 링크들 -->
                 <div class="flex flex-col gap-2 mt-6">
                     <a href="#" class="flex items-center gap-2 hover:text-blue-700 transition-colors">
                         <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
@@ -75,7 +67,7 @@
         </aside>
 
         <!-- [RIGHT CONTENT] -->
-        <main class="content flex-1 min-h-screen">
+        <main class="content flex-1 min-h-screen flex flex-col">
             
             <!-- 1. Bio Section -->
             <section class="mb-20 max-w-3xl">
@@ -95,11 +87,9 @@
                     
                     <!-- Paper 1 -->
                     <div class="flex flex-col md:flex-row gap-2 md:gap-8 group">
-                        <!-- Venue -->
                         <div class="w-full md:w-32 flex-shrink-0 pt-1">
                             <span class="text-blue-800 font-bold text-sm tracking-wide">ESORICS '22</span>
                         </div>
-                        <!-- Details -->
                         <div class="flex-1">
                             <h3 class="text-lg font-bold text-gray-900 leading-snug mb-2 group-hover:text-blue-800 transition-colors">
                                 SecQuant: Quantifying Container System Call Exposure
@@ -107,7 +97,6 @@
                             <p class="text-gray-600 text-[0.95rem] mb-3 leading-relaxed">
                                 <u class="decoration-1 underline-offset-4 decoration-gray-400">Sunwoo Jang</u>, Somin Song, Byungchul Tak, Sahil Suneja, Michael V. Le, Chuan Yue, Dan Williams
                             </p>
-                            <!-- Minimal Buttons -->
                             <div class="flex flex-wrap gap-3 text-[0.7rem] font-bold tracking-wider uppercase text-gray-500">
                                 <a href="#" class="btn-artifact border border-gray-200 rounded px-3 py-1 hover:border-gray-900 hover:text-gray-900 transition duration-300">PDF</a>
                                 <a href="#" class="btn-artifact border border-gray-200 rounded px-3 py-1 hover:border-gray-900 hover:text-gray-900 transition duration-300">Code</a>
@@ -142,7 +131,6 @@
                 <h2 class="text-xl font-bold text-gray-900 mb-8 pb-2 border-b border-gray-100 inline-block">Experience</h2>
                 
                 <div class="space-y-6">
-                    <!-- Item -->
                     <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                         <div>
                             <span class="font-bold text-gray-900">Embedded Software Engineer</span>
@@ -152,7 +140,6 @@
                         <span class="text-sm text-gray-400 font-mono">Aug 2024 – Present</span>
                     </div>
                     
-                    <!-- Item -->
                     <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                         <div>
                             <span class="font-bold text-gray-900">Software Engineer</span>
@@ -162,7 +149,6 @@
                         <span class="text-sm text-gray-400 font-mono">Sep 2023 – Aug 2024</span>
                     </div>
 
-                    <!-- Item -->
                      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                         <div>
                             <span class="font-bold text-gray-900">M.S. in Computer Science and Engineering</span>
@@ -174,7 +160,7 @@
                 </div>
             </section>
 
-            <!-- Footer (Center Aligned, Minimalist) -->
+             <!-- Footer (Center Aligned, Minimalist) -->
              <footer class="mt-auto pt-8 border-t border-gray-100 text-center text-xs text-gray-400">
                 <p>&copy; 2026 Sunwoo Jang. Last updated: Jan 14 2026.</p>
             </footer>
