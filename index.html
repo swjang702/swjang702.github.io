@@ -29,13 +29,21 @@
         <!-- [LEFT SIDEBAR] -->
         <aside class="sidebar w-full md:w-64 flex-shrink-0 md:sticky md:top-20 md:h-fit">
             
-            <!-- 프로필 사진 (수정됨: 직사각형 비율 허용) -->
+            <!-- 프로필 사진 (수정됨: 사이드바 너비에 맞춰 꽉 차게 키움) -->
             <div class="mb-8">
-                <img src="golden_gate.jpg" 
+                <img src="golden_gate.jpg"
+                     onerror="this.src='https://ui-avatars.com/api/?name=Sunwoo+Jang&background=333&color=fff&size=256'"
+                     alt="Sunwoo Jang" 
+                     class="w-full h-auto rounded-lg shadow-md block">
+            </div>
+
+            <!-- 프로필 사진 (수정됨: 직사각형 비율 허용)
+            <div class="mb-8">
+                <img src="golden_gate.jpg"
                      onerror="this.src='https://ui-avatars.com/api/?name=Sunwoo+Jang&background=333&color=fff&size=256'"
                      alt="Sunwoo Jang" 
                      class="w-40 h-auto rounded-lg shadow-sm block">
-            </div>
+            </div> -->
 
             <h1 class="text-2xl font-bold text-gray-900 mb-1">Sunwoo Jang</h1>
             <p class="text-sm text-gray-600 mb-6 font-medium tracking-wide">Security Researcher</p>
