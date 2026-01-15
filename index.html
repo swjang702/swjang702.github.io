@@ -39,7 +39,7 @@
             </div>
 
             <h1 class="text-2xl font-bold text-gray-900 mb-1">Sunwoo Jang</h1>
-            <p class="text-sm text-gray-600 mb-6 font-medium tracking-wide">Security Researcher</p>
+            <!-- <p class="text-sm text-gray-600 mb-6 font-medium tracking-wide">Security Researcher</p> -->
 
             <!-- 정보 및 링크 -->
             <div class="space-y-3 text-sm text-gray-600">
@@ -53,11 +53,13 @@
                 <!-- 아이콘 링크들 (새 탭 열기 적용) -->
                 <div class="flex flex-col gap-2 mt-6">
                     <!-- CV -->
-                    <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-blue-700 transition-colors">
-                        <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-700 transition-colors" viewBox="0 0 24 24" fill="currentColor">
-                            <text x="50%" y="68%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="16" letter-spacing="-1">CV</text>
+                    <a href="assets/pdf/cv.pdf" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 hover:text-blue-700 transition-colors">
+                        <!-- w-5 -> w-4로 변경하여 아래 아이콘들과 크기 통일 -->
+                        <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-700 transition-colors" viewBox="0 0 24 24" fill="currentColor">
+                            <!-- font-size를 키워서 작은 박스 안에서도 CV가 잘 보이게 조정 -->
+                            <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="20" letter-spacing="-1">CV</text>
                         </svg>
-                        <span>Curriculum Vitae</span>
+                        <span class="font-semibold">Curriculum Vitae</span>
                     </a>
                     <!-- Google Scholar -->
                     <a href="https://scholar.google.co.kr/citations?user=_mLXrFsAAAAJ" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-blue-700 transition-colors">
@@ -82,7 +84,7 @@
                     I am a Security Researcher interested in <strong class="text-gray-900 font-semibold">Systems Security</strong>, specifically focused on operating system security and container runtime protection.
                 </p>
                 <p class="text-[1.05rem] leading-8 text-gray-700 font-light">
-                    Currently, I am looking for PhD opportunities. My research goal is to build robust and verifiable security systems by bridging the gap between high-level abstractions and low-level system behaviors. Previously, I worked as an Embedded Software Engineer at LG Innotek.
+                    Currently, I am looking for PhD opportunities. My research goal is to build robust and verifiable security systems by bridging the gap between high-level abstractions and low-level system behaviors.
                 </p>
             </section>
 
@@ -107,8 +109,8 @@
                             <!-- Minimal Buttons -->
                             <div class="flex flex-wrap gap-3 text-[0.7rem] font-bold tracking-wider uppercase text-gray-500">
                                 <a href="#" target="_blank" rel="noopener noreferrer" class="btn-artifact border border-gray-200 rounded px-3 py-1 hover:border-gray-900 hover:text-gray-900 transition duration-300">PDF</a>
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-artifact border border-gray-200 rounded px-3 py-1 hover:border-gray-900 hover:text-gray-900 transition duration-300">Code</a>
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-artifact border border-gray-200 rounded px-3 py-1 hover:border-gray-900 hover:text-gray-900 transition duration-300">Slides</a>
+                                <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="btn-artifact border border-gray-200 rounded px-3 py-1 hover:border-gray-900 hover:text-gray-900 transition duration-300">Code</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-artifact border border-gray-200 rounded px-3 py-1 hover:border-gray-900 hover:text-gray-900 transition duration-300">Slides</a> -->
                             </div>
                         </div>
                     </div>
