@@ -89,87 +89,66 @@
                 </p>
             </section>
 
-            <!-- 2. Publications Section -->
+            <!-- 2. Publications Section (Classic Citation Style) -->
             <section class="mb-20">
-                <h2 class="text-xl font-bold text-gray-900 mb-10 pb-2 border-b border-gray-100 inline-block">Publications</h2>
+                <h2 class="text-xl font-bold text-gray-900 mb-8 pb-2 border-b border-gray-100 inline-block">Publications</h2>
                 
-                <div class="space-y-12">
+                <div class="space-y-10"> <!-- 논문 사이 간격 -->
                     
                     <!-- Paper 1 -->
-                    <div class="flex flex-col md:flex-row gap-2 md:gap-8 group">
-                        <div class="w-full md:w-32 flex-shrink-0 pt-1">
-                            <span class="text-blue-800 font-bold text-sm tracking-wide">ESORICS '22</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-lg font-bold text-gray-900 leading-snug mb-2 group-hover:text-blue-800 transition-colors">
+                    <article>
+                        <!-- Title -->
+                        <h3 class="text-[1.05rem] font-bold text-gray-900 leading-snug mb-2">
+                            <a href="assets/papers/esorics22-secquant.pdf" target="_blank" class="hover:text-blue-700 transition-colors">
                                 SecQuant: Quantifying Container System Call Exposure
-                            </h3>
-                            <p class="text-gray-600 text-[0.95rem] mb-3 leading-relaxed">
-                                <u class="decoration-1 underline-offset-4 decoration-gray-400">Sunwoo Jang</u>, Somin Song, Byungchul Tak, Sahil Suneja, Michael V. Le, Chuan Yue, Dan Williams
-                            </p>
-                            <!-- Minimal Buttons -->
-                            <div class="flex flex-wrap gap-3 text-[0.7rem] font-bold tracking-wider uppercase text-gray-500">
-                                <a href="assets/papers/esorics22-secquant.pdf" target="_blank" rel="noopener noreferrer" class="btn-artifact border border-gray-200 rounded px-3 py-1 hover:border-gray-900 hover:text-gray-900 transition duration-300">PDF</a>
-                                <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="btn-artifact border border-gray-200 rounded px-3 py-1 hover:border-gray-900 hover:text-gray-900 transition duration-300">Code</a>
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-artifact border border-gray-200 rounded px-3 py-1 hover:border-gray-900 hover:text-gray-900 transition duration-300">Slides</a> -->
-                            </div>
+                            </a>
+                        </h3>
+                        
+                        <!-- Authors -->
+                        <div class="text-[0.95rem] text-gray-800 mb-1">
+                            <u class="decoration-1 underline-offset-4 decoration-gray-400 font-medium">Sunwoo Jang</u>, Somin Song, Byungchul Tak, Sahil Suneja, Michael V. Le, Chuan Yue, and Dan Williams.
                         </div>
-                    </div>
+                        
+                        <!-- Venue (Italic) -->
+                        <div class="text-[0.95rem] text-gray-600 italic mb-3">
+                            In Proceedings of the 27th European Symposium on Research in Computer Security (<span class="font-bold text-gray-900">ESORICS</span>), Copenhagen, Denmark, September 2022.
+                        </div>
+
+                        <!-- Artifact Buttons -->
+                        <div class="flex flex-wrap gap-2 text-[0.7rem] font-bold tracking-wider uppercase text-gray-500">
+                            <a href="assets/papers/esorics22-secquant.pdf" target="_blank" class="btn-artifact border border-gray-200 rounded px-2 py-0.5 hover:border-blue-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">PDF</a>
+                            <!-- <a href="#" target="_blank" class="btn-artifact border border-gray-200 rounded px-2 py-0.5 hover:border-gray-900 hover:text-gray-900 transition duration-300">Code</a>
+                            <a href="#" target="_blank" class="btn-artifact border border-gray-200 rounded px-2 py-0.5 hover:border-gray-900 hover:text-gray-900 transition duration-300">Slides</a> -->
+                        </div>
+                    </article>
 
                     <!-- Paper 2 -->
-                    <div class="flex flex-col md:flex-row gap-2 md:gap-8 group">
-                        <div class="w-full md:w-32 flex-shrink-0 pt-1">
-                            <span class="text-blue-800 font-bold text-sm tracking-wide">IEICE Trans '24</span>
+                    <article>
+                        <!-- Title -->
+                        <h3 class="text-[1.05rem] font-bold text-gray-900 leading-snug mb-2">
+                            <a href="assets/papers/ieice24-container.pdf" target="_blank" class="hover:text-blue-700 transition-colors">
+                                Understanding File System Operations of a Secure Container Runtime Using System Call Tracing Technique
+                            </a>
+                        </h3>
+                        
+                        <!-- Authors -->
+                        <div class="text-[0.95rem] text-gray-800 mb-1">
+                            <u class="decoration-1 underline-offset-4 decoration-gray-400 font-medium">Sunwoo Jang</u>, Young-Kyoon Suh, and Byungchul Tak.
                         </div>
-                        <div class="flex-1">
-                            <h3 class="text-lg font-bold text-gray-900 leading-snug mb-2 group-hover:text-blue-800 transition-colors">
-                                Understanding File System Operations of a Secure Container Runtime
-                            </h3>
-                            <p class="text-gray-600 text-[0.95rem] mb-3 leading-relaxed">
-                                <u class="decoration-1 underline-offset-4 decoration-gray-400">Sunwoo Jang</u>, Young-Kyoon Suh, Byungchul Tak
-                            </p>
-                            <div class="flex flex-wrap gap-3 text-[0.7rem] font-bold tracking-wider uppercase text-gray-500">
-                                <a href="assets/papers/ieice24-container.pdf" class="btn-artifact border border-gray-200 rounded px-3 py-1 hover:border-gray-900 hover:text-gray-900 transition duration-300">PDF</a>
-                            </div>
+                        
+                        <!-- Venue (Italic) -->
+                        <div class="text-[0.95rem] text-gray-600 italic mb-3">
+                            IEICE Transactions on Information and Systems, Vol.E107, No.2, February 2024.
                         </div>
-                    </div>
+
+                        <!-- Artifact Buttons -->
+                        <div class="flex flex-wrap gap-2 text-[0.7rem] font-bold tracking-wider uppercase text-gray-500">
+                            <a href="assets/papers/ieice24-container.pdf" target="_blank" class="btn-artifact border border-gray-200 rounded px-2 py-0.5 hover:border-gray-900 hover:text-gray-900 transition duration-300">PDF</a>
+                        </div>
+                    </article>
 
                 </div>
             </section>
-
-            <!-- 3. Experience Section
-            <section class="mb-24">
-                <h2 class="text-xl font-bold text-gray-900 mb-8 pb-2 border-b border-gray-100 inline-block">Experience</h2>
-                
-                <div class="space-y-6">
-                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-                        <div>
-                            <span class="font-bold text-gray-900">Embedded Software Engineer</span>
-                            <span class="text-gray-500 mx-2">/</span>
-                            <span class="text-gray-700">LG Innotek</span>
-                        </div>
-                        <span class="text-sm text-gray-400 font-mono">Aug 2024 – Present</span>
-                    </div>
-                    
-                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-                        <div>
-                            <span class="font-bold text-gray-900">Software Engineer</span>
-                            <span class="text-gray-500 mx-2">/</span>
-                            <span class="text-gray-700">Genians</span>
-                        </div>
-                        <span class="text-sm text-gray-400 font-mono">Sep 2023 – Aug 2024</span>
-                    </div>
-
-                     <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-                        <div>
-                            <span class="font-bold text-gray-900">M.S. in Computer Science and Engineering</span>
-                            <span class="text-gray-500 mx-2">/</span>
-                            <span class="text-gray-700">Kyungpook National University</span>
-                        </div>
-                        <span class="text-sm text-gray-400 font-mono">2020 – 2022</span>
-                    </div>
-                </div>
-            </section> -->
 
              <!-- Footer (Center Aligned, Minimalist) -->
              <footer class="mt-auto pt-8 border-t border-gray-100 text-center text-xs text-gray-400">
