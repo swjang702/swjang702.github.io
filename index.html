@@ -170,27 +170,33 @@
                 </div>
             </section>
 
-
             <!-- Video Section -->
-            <section class="mb-20 max-w-3xl">
-                <p class="text-[0.95rem] text-gray-700 mb-4">
-                    FUNNY: a piece of my thought made by NotebookLM.
-                </p>
-                <div class="w-full max-w-2xl">
-                    <iframe class="w-full aspect-video rounded-lg shadow-md"
-                            src="https://www.youtube.com/embed/G5M47GBdJuc?si=13laeWX-JHop2NwQ"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen>
-                    </iframe>
+            <section class="mb-20">
+                <div class="w-full max-w-lg mx-auto"> <!-- mx-auto: 중앙 정렬, max-w-lg: 중간 사이즈 -->
+                    
+                    <!-- 문구: 추천 1번 적용 (원하시는 대로 수정 가능) -->
+                    <p class="text-[0.95rem] text-gray-600 mb-3 font-medium text-center">
+                        ☕ A Side Note: My thoughts synthesized by NotebookLM.
+                    </p>
+
+                    <!-- 비디오 프레임 -->
+                    <div class="relative w-full shadow-lg rounded-lg overflow-hidden" style="padding-bottom: 56.25%;"> 
+                        <!-- padding-bottom 56.25%는 16:9 비율 유지용 -->
+                        <iframe class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
             </section>
 
              <!-- Footer (Center Aligned, Minimalist) -->
              <footer class="mt-auto pt-8 border-t border-gray-100 text-center text-xs text-gray-400">
-                <p>&copy; 2026 Sunwoo Jang. Last updated: Feb 15 2026.</p>
+                <p>&copy; 2026 Sunwoo Jang. Last updated: Feb 28 2026.</p>
             </footer>
 
         </main>
